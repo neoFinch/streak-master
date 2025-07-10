@@ -1,2 +1,8 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+/* overrides */
+
+:root {
+  --ion-color-primary: #5064ed;
+}

@@ -1,0 +1,69 @@
+.task-container {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.time-table-task ion-row {
+  border-bottom: 1px solid rgb(77, 99, 108);
+}
+
+.time-table-task ion-row:last-child {
+  border-bottom: none;
+}
+
+.time-table-task ion-col:first-child {
+  border-right: 1px solid rgb(77, 99, 108);;
+}
+
+.time-table-task {
+  overflow-y: auto;
+}
+
+.row-wrapper {
+  cursor: pointer;
+  user-select: none;
+  touch-action: none;
+  padding: 4px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
+}
+
+.selected-row {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.2);
+  border-color: var(--ion-color-primary);
+}
+
+.row-wrapper:hover {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.1);
+}
+
+/* Add scrollbar styling if needed */
+.time-table-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.time-table-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.time-table-container::-webkit-scrollbar-thumb {
+  background: rgba(var(--ion-color-primary-rgb), 0.3); 
+  border-radius: 2px;
+}
+
+.add-task-modal {
+  background-color: #48467455;
+  /* backdrop-filter: blur(1px); */
+}
+
+.selected-slots-indicator {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: var(--ion-color-primary);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
