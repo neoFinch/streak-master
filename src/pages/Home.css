@@ -6,6 +6,7 @@
 
 .time-table-task ion-row {
   border-bottom: 1px solid rgb(77, 99, 108);
+
 }
 
 .time-table-task ion-row:last-child {
@@ -13,7 +14,7 @@
 }
 
 .time-table-task ion-col:first-child {
-  border-right: 1px solid rgb(77, 99, 108);;
+  border-right: 1px solid rgb(77, 99, 108);
 }
 
 .time-table-task {

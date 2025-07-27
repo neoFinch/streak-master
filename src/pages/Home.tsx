@@ -1,37 +1,17 @@
 import {
-  IonButton,
-  IonCol,
   IonContent,
-  IonGrid,
   IonHeader,
-  IonItem,
-  IonList,
   IonPage,
-  IonRefresher,
-  IonRefresherContent,
-  IonRow,
-  IonSelect,
-  IonSelectOption,
-  IonText,
   IonTitle,
   IonToolbar,
   RefresherEventDetail,
-  IonDatetimeButton,
-  IonFab,
-  IonFabButton,
-  IonIcon,
-  IonFabList,
-  IonLabel,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
+
 import "./Home.css";
-import { useTimeTableStore } from "../store";
-import { TimeTable } from "../components/TimeTable";
 import TimeTableV2 from "../components/TimeTableV2";
-import { add, colorPalette, globe, document, analyticsSharp } from "ionicons/icons";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const Home: React.FC = () => {
-  const { timetable } = useTimeTableStore();
   const handleRefresh = (event: CustomEvent<RefresherEventDetail>) => {
     // refresh page
     window.location.reload();
@@ -44,7 +24,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Take Charge</IonTitle>
+          <IonTitle>Take Charge of Your Time</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -55,10 +35,21 @@ const Home: React.FC = () => {
         </IonHeader>
 
         {/* <TimeTable/> */}
-        <TimeTableV2/>
-
-        
+        <TimeTableV2 />
       </IonContent>
+      <ToastContainer
+        position="top-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </IonPage>
   );
 };

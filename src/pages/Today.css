@@ -1,0 +1,37 @@
+ion-card {
+  color: var(--kolor-yellow);
+}
+.today-value {
+  color: var(--ion-color-primary);
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+.task-done-icon {
+  color: var(--kolor-yellow);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.task-undone-icon {
+  color: var(--kolor-khakhi);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.task-done-card {
+  color: var(--kolor-yellow)
+}
+
+
+.task-undone-card {
+  color: var(--kolor-khakhi)
+}
+
+.task-undone-card .badge {
+  background-color: var(--kolor-khakhi);
+}
+
+.task-done-card .badge {
+  background-color: var(--kolor-yellow);
+}

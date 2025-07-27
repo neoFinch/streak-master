@@ -23,10 +23,10 @@ allprojects {
         mavenCentral()
     }
     
-    // Force Java 17 for all modules
+    // Force Java 21 for all modules
     tasks.withType(JavaCompile) {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
